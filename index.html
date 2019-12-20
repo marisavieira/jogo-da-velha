@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="sortcut icon" href="imagens/icon.png" type="image/x-icon" />	
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <article class="tudo">
+        <section class="placar">
+            <img id="hdr" src="imagens/header.png">
+            <div class="conteudo">
+                <div onclick="limpar();" id="novoJogo"> NOVO JOGO </div>
+                <hr style="color: red;">
+
+                <strong><p id="vezdo">X começa jogando</p></strong>    
+                <hr>
+
+                <div id="resultado">
+                    <p id="vencedor">Nenhum vencedor ainda</p>
+                    <div id="imagem"></div>
+                </div>
+            </div>            
+            <h1 style="margin-bottom: 15px;" id="titulo"> Jogo da Velha </h1>   
+            <p> Desenvolvido por: Marisa </h1>          
+        </section>
+        
+        <section class="velha" id="velha">
+            <section class="linha">
+                <div onclick="adiciona(id,0);" id="11" class="quadrado q11"></div>
+                <div onclick="adiciona(id,1);" id="12" class="quadrado q12"></div>
+                <div onclick="adiciona(id,2);" id="13" class="quadrado q13"></div>
+            </section>
+            <section class="linha">
+                <div onclick="adiciona(id, 3);" id="21" class="quadrado q21"></div>
+                <div onclick="adiciona(id, 4);" id="22" class="quadrado q22"></div>
+                <div onclick="adiciona(id, 5);" id="23" class="quadrado q23"></div>
+            </section>
+            <section class="linha">
+                <div onclick="adiciona(id, 6);" id="31" class="quadrado q31"></div>
+                <div onclick="adiciona(id, 7);" id="32" class="quadrado q32"></div>
+                <div onclick="adiciona(id, 8);" id="33" class="quadrado q33"></div>
+            </section>
+        </section>
+
+        <section class="instruções">
+            <img id="hdr" src="imagens/header2.png">
+            <div class="conteudos">
+                <h3 id="tituloInstrucoes"> Instruções </h3>  
+                <p id="desc"> <strong>•</strong>Preencher ou as linhas Diagonais ou as Horizontais ou as Verticais 
+                    com um mesmo símbolo (X ou O).</p>
+                <p id="desc"> <strong>•</strong> Impedir que seu adversário faça isso primeiro que você.</p>
+            </div>
+            <div class="conteudos">
+                <h3 id="tituloInstrucoes"> Dicas </h3>  
+                <p id="desc"> <strong>•</strong> Se você tem duas peças numa linha, ponha a terceira.</p>
+                <p id="desc"> <strong>•</strong> Se o oponente tiver duas peças em linha, ponha a terceira para bloqueá-lo.</p>
+                <p id="desc"> <strong>•</strong> Triângulo: crie uma oportunidade em que você poderá ganhar de duas maneiras.</p>
+                <p id="desc"> <strong>•</strong> Bloqueie o Triângulo do oponente.</p>
+            </div>
+            
+        </section>
+    </article>
+</body>
+</html>

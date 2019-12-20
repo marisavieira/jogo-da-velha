@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
+
+body{
+    background-color: #f1f2f6;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+.tudo{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #ffa07a;
+    padding: 0 0 15px 0;
+    margin: 5px 15px 2px 15px;
+}
+
+#titulo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.placar{
+    font-family: 'Inria Serif', serif;
+    margin-top: 40px;
+}
+
+#hdr{
+    width: 200px;
+}
+
+.conteudo{
+    border: 1px solid #7cccc5;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+#novoJogo{
+    border: 1px solid black;
+    width: 100px;
+    margin: 15px 0 15px 45px;
+    background-color: rgba(188, 227, 226, 0.2);
+}
+
+#novoJogo:hover{
+    cursor: pointer;
+}
+
+#imagem{
+    margin: 5px;
+    padding: 0;
+}
+
+#vencedor{
+    margin: 0;
+    padding: 0;
+}
+
+.velha{
+    margin-top: 140px;
+}
+
+.linha{
+    display: flex;
+}
+
+.quadrado{
+    width: 130px;
+    height: 130px;
+}
+
+.q11, .q12{
+    border-right: 1px solid #b2bec3;
+    border-bottom: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q13{
+    border-bottom: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q21, .q22{
+    border-top: 1px solid #b2bec3;
+    border-right: 1px solid #b2bec3;
+    border-bottom: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q23{
+    border-top: 1px solid #b2bec3;
+    border-bottom: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q31, .q32{
+    border-top: 1px solid #b2bec3;
+    border-right: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q33{
+    border-top: 1px solid #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruções{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.conteudos{
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid #7cccc5;
+    padding: 5px;
+    min-height: 100px;
+    padding: 15px;
+
+}
+
+#tituloInstrucoes{
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+}
+
+#desc{
+    font-family: 'Inria Serif', serif;
+    text-align: justify;
+    margin-bottom: 0;
+}
